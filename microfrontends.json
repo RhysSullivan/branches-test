@@ -1,25 +1,31 @@
 {
-    "$schema": "https://openapi.vercel.sh/microfrontends.json",
-    "applications": {
-      "docs": {
-        "routing": [
-          {
-            "group": "default",
-            "paths": [
-              "/docs",
-              "/docs/:path*"
-            ]
-          }
-        ],
-        "development": {
-          "local": {
-            "port": 3000
-          }
-        },
-        "vercel": {
-          "projectId": "prj_yS5z5jREKLj3xhvQKEezzLb2MstE"
+  "$schema": "https://openapi.vercel.sh/microfrontends.json",
+  "applications": {
+    "main-site": {
+      "development": {
+        "local": {
+          "port": 3000
         }
+      },
+      "vercel": {
+        "projectId": "prj_yS5z5jREKLj3xhvQKEezzLb2MstE"
+      }
+    },
+    "docs": {
+      "routing": [
+        {
+          "group": "default",
+          "paths": ["/docs", "/docs/:path*"]
+        }
+      ],
+      "development": {
+        "local": {
+          "port": 3001
+        }
+      },
+      "vercel": {
+        "projectId": "prj_ZT66unmUTGHrHvp93N116PXoQZP7"
       }
     }
   }
-  
+}
