@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <main>
-      <div>This is deployment 1 on branch 2</div>
+      <div>This is deployment 2 on branch 2</div>
     </main>
   );
 }
