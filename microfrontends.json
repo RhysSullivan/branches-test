@@ -1,0 +1,25 @@
+{
+    "$schema": "https://openapi.vercel.sh/microfrontends.json",
+    "applications": {
+      "docs": {
+        "routing": [
+          {
+            "group": "default",
+            "paths": [
+              "/docs",
+              "/docs/:path*"
+            ]
+          }
+        ],
+        "development": {
+          "local": {
+            "port": 3000
+          }
+        },
+        "vercel": {
+          "projectId": "prj_yS5z5jREKLj3xhvQKEezzLb2MstE"
+        }
+      }
+    }
+  }
+  
